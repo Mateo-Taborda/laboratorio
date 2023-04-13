@@ -58,7 +58,7 @@ public class RelacionServlet extends HttpServlet {
        
         request.setAttribute("course", estudiantecurso);
         request.setAttribute("allCourse", estudianteCursoFacade.findAll());
-        request.getRequestDispatcher("RelacionInfo.jsp").forward (request,response);
+        request.getRequestDispatcher("relacionInfo.jsp").forward (request,response);
         
     }
 

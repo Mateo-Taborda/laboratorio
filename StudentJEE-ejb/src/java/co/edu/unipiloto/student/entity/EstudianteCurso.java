@@ -50,8 +50,10 @@ public class EstudianteCurso implements Serializable {
         this.estudianteCursoPK = estudianteCursoPK;
     }
 
-    public EstudianteCurso(int idEstudiante, String codigoCurso, int nota) {
-        this.estudianteCursoPK = new EstudianteCursoPK(idEstudiante, codigoCurso, nota);
+    public EstudianteCurso(int idEstudiante, String codigoCurso, double nota) {
+        this.estudianteCursoPK = new EstudianteCursoPK(idEstudiante,codigoCurso);
+        this.nota = nota;
+        
     }
 
     public EstudianteCursoPK getEstudianteCursoPK() {

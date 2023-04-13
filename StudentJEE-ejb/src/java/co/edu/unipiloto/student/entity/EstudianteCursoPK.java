@@ -28,16 +28,16 @@ public class EstudianteCursoPK implements Serializable {
     @Size(min = 1, max = 10)
     @Column(name = "CODIGO_CURSO")
     private String codigoCurso;
-    @Basic(optional = true)
-    @Column(name = "NOTA")
-    private float nota;
+  
+  
+ 
     public EstudianteCursoPK() {
     }
 
-    public EstudianteCursoPK(int idEstudiante, String codigoCurso, int nota) {
+    public EstudianteCursoPK(int idEstudiante, String codigoCurso) {
         this.idEstudiante = idEstudiante;
         this.codigoCurso = codigoCurso;
-        this.nota = nota;
+       
     }
 
     public int getIdEstudiante() {
